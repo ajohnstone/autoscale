@@ -21,7 +21,7 @@ do
     if [ -n $value ]; then
         echo $value > /opt/facts/tags/$key;
         logger "set fact $key to $value";
-    elif
+    else
         touch /opt/facts/tags/$key;
     fi
 done
