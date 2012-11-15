@@ -8,11 +8,11 @@ Usage
 Create a config for the pager duty and twilio keys.
 
 mkdir -p /etc/pagerduty/ && cat > /etc/pagerduty/config.sh <<EOF
-PD_TOKEN="XXX" # Pager duty authentication token
-PD_SCHEDULE_ID="XXX" # Pager duty schedule id 
-T_ACCOUNT_SID="XXX"
-T_AUTH_TOKEN="XXX"
-T_PHONE_NUMBER_SID="XXX"
+PD_TOKEN="XXX"           # Pager duty authentication token
+PD_SCHEDULE_ID="XXX"     # Pager duty schedule id 
+T_ACCOUNT_SID="XXX"      # Twilio account id
+T_AUTH_TOKEN="XXX"       # Twilio auth token 
+T_PHONE_NUMBER_SID="XXX" # Twilio phone number sid
 EOF
 
 ./pagerduty-twilio-on-call.sh
